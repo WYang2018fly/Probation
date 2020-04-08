@@ -1,0 +1,196 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-07T09:20:07.335Z",
+    "end": "2020-04-07T09:20:07.641Z",
+    "duration": 306,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2259d271-5010-4b6d-bb3d-ab7d53908009",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17b47a05-217a-4662-8aac-a4b3be604a83",
+          "title": "加法函数的测试",
+          "fullFile": "D:\\My Projects\\FizzBuzz\\test\\add.test.js",
+          "file": "\\test\\add.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "1+1 equal 2",
+              "fullTitle": "加法函数的测试 1+1 equal 2",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(add(1, 1)).to.be.equal(2);",
+              "err": {},
+              "uuid": "4caa66a8-56bb-4d5c-99ae-0087c25d8482",
+              "parentUUID": "17b47a05-217a-4662-8aac-a4b3be604a83",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4caa66a8-56bb-4d5c-99ae-0087c25d8482"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fab39b04-0db7-4e1a-8a82-856a0afdb1bf",
+          "title": "fizzBuzz's test",
+          "fullFile": "D:\\My Projects\\FizzBuzz\\test\\fizzBuzz.test.js",
+          "file": "\\test\\fizzBuzz.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "invalid situation",
+              "fullTitle": "fizzBuzz's test invalid situation",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(fizzBuzz()).to.be.equal(\"Don't input null value\");\nexpect(fizzBuzz('one')).to.be.equal(\"please input Interger number\");\nexpect(fizzBuzz(-1)).to.be.equal(\"Don't input decimals or negative Numbers\");\nexpect(fizzBuzz(2.2)).to.be.equal(\"Don't input decimals or negative Numbers\");",
+              "err": {},
+              "uuid": "f7cd6114-e8a9-4f7b-94f1-57a979154636",
+              "parentUUID": "fab39b04-0db7-4e1a-8a82-856a0afdb1bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "valid parameters",
+              "fullTitle": "fizzBuzz's test valid parameters",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(fizzBuzz(3)).to.be.equal('Fizz');\nexpect(fizzBuzz(5)).to.be.equal('Buzz');\nexpect(fizzBuzz(13)).to.be.equal('Fizz');\nexpect(fizzBuzz(75)).to.be.equal('FizzBuzz');",
+              "err": {},
+              "uuid": "1559bc09-4dac-4451-b1f7-9f734746bee4",
+              "parentUUID": "fab39b04-0db7-4e1a-8a82-856a0afdb1bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "version 1.0's result",
+              "fullTitle": "fizzBuzz's test version 1.0's result",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(fizzBuzz(23,1)).to.be.equal(23);",
+              "err": {},
+              "uuid": "9dd034dd-cc38-4ae2-8763-bbc187389af3",
+              "parentUUID": "fab39b04-0db7-4e1a-8a82-856a0afdb1bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "version 2.0's result",
+              "fullTitle": "fizzBuzz's test version 2.0's result",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(fizzBuzz(23)).to.be.equal('Fizz');",
+              "err": {},
+              "uuid": "6b1a31c8-9017-4459-a0ae-9b63de34e476",
+              "parentUUID": "fab39b04-0db7-4e1a-8a82-856a0afdb1bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f7cd6114-e8a9-4f7b-94f1-57a979154636",
+            "1559bc09-4dac-4451-b1f7-9f734746bee4",
+            "9dd034dd-cc38-4ae2-8763-bbc187389af3",
+            "6b1a31c8-9017-4459-a0ae-9b63de34e476"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.1.0"
+    }
+  }
+}

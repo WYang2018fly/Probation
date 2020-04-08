@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-08T09:39:57.107Z",
+    "end": "2020-04-08T09:39:57.139Z",
+    "duration": 32,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "57850a0a-68ee-4573-aba4-9a3ae34887f4",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db43bf15-fd62-4651-8756-2e265bddc78d",
+          "title": "Args's test",
+          "fullFile": "D:\\My Projects\\Args\\test\\Args.test.js",
+          "file": "\\test\\Args.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "valid parameters",
+              "fullTitle": "Args's test valid parameters",
+              "timedOut": false,
+              "duration": 18,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(new Args(schema, '-l -p 8080 -d /usr/logo').Parse()).to.be.deep.equal({\n  l: true,\n  p: 8080,\n  d: '/usr/logo'\n});\nexpect(new Args(schema, '-p 8080 -d /usr/logo').Parse()).to.be.deep.equal({\n  p: 8080,\n  d: '/usr/logo'\n})\nexpect(new Args(schema, '-l -p 8080 -d /usr/logo /etc').Parse()).to.be.deep.equal({\n  l: true,\n  p: 8080,\n  d: ['/usr/logo', '/etc']\n})\nexpect(new Args(schema, '-l -p 8080 430 20 -d /usr/logo /etc').Parse()).to.be.deep.equal({\n  l: true,\n  p: [8080, 430, 20],\n  d: ['/usr/logo', '/etc']\n})\nexpect(new Args(schema, '-l -p 8080 430 20 -d /usr/logo /etc -t 2020-04-08').Parse()).to.be.deep.equal({\n  l: true,\n  p: [8080, 430, 20],\n  d: ['/usr/logo', '/etc'],\n  t: '2020-04-08'\n})\nexpect(new Args(schema, '-l -p 8080 430 20 -d /usr/logo /etc -t').Parse()).to.be.deep.equal({\n  l: true,\n  p: [8080, 430, 20],\n  d: ['/usr/logo', '/etc'],\n  t: ''\n})\nexpect(new Args(create({\n  l: 'boolean',\n  p: 'number',\n  d: 'string',\n  g: 'string',\n  f: 'number'\n}), '-l -p 8080 -d /usr/logo -g this is a list -f 1 2 -3 5').Parse()).to.be.deep.equal({\n  l: true,\n  p: 8080,\n  d: '/usr/logo',\n  g: [\"this\", \"is\", \"a\", \"list\"],\n  f: [1, 2, -3, 5]\n})\nexpect(new Args(create({\n  l: 'boolean',\n  p: 'number',\n  u: 'list',\n  d: 'string',\n  g: 'string',\n  q: 'list'\n}), '-l -p 8080 -u 23,123 -d /usr/logo -g this is a list -q this,for').Parse()).to.be.deep.equal({\n  l: true,\n  p: 8080,\n  u: [23,123],\n  d: '/usr/logo',\n  g: [\"this\", \"is\", \"a\", \"list\"],\n  q:[\"this\",\"for\"]\n})",
+              "err": {},
+              "uuid": "270cdeb0-c740-424e-b1b1-bcba02cb32f7",
+              "parentUUID": "db43bf15-fd62-4651-8756-2e265bddc78d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalid situation",
+              "fullTitle": "Args's test invalid situation",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(() => new Args(schema, '-l -p 8080 430 20 -d /usr/logo /etc -k').Parse()).should.throw();",
+              "err": {},
+              "uuid": "32249537-68b5-49ee-9bf2-23d07fb983ab",
+              "parentUUID": "db43bf15-fd62-4651-8756-2e265bddc78d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "270cdeb0-c740-424e-b1b1-bcba02cb32f7",
+            "32249537-68b5-49ee-9bf2-23d07fb983ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.1.0"
+    }
+  }
+}

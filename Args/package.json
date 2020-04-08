@@ -1,0 +1,20 @@
+{
+  "name": "Args",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "mocha --exit",
+    "testall": "mocha --recursive",
+    "mochawesome": "mocha --reporter mochawesome 'test/*.js'",
+    "coverage": "istanbul cover C:\\Users\\24216\\AppData\\Roaming\\npm\\node_modules\\mocha\\bin\\_mocha"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "lodash": "^4.17.15",
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0"
+  }
+}

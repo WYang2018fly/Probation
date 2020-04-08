@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Args\Args.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">Args/</a> Args.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>46/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>28/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>45/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">75×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">71×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">71×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">30×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">15×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">const _ = require('lodash')
+&nbsp;
+class Args {
+  constructor(schema, cl) {
+    this.schema = schema;
+    this.cl = cl;
+  }
+&nbsp;
+  //是否符合规定的参数结构
+  isSchema(schema, ary) {
+    ary.forEach(item =&gt; {
+      if (!schema.hasOwnProperty(item)) {
+        console.log('error')
+        throw new Error('The parameter format is incorrect');
+      }
+    })
+  }
+&nbsp;
+  // isUseDefault(index,clary,idxAry){
+  //   //当前索引的后一项如果等于以idxAry为索引数组的下一项，说明此标记使用默认值
+  //   return clary[index + 1] == clary[idxAry[index + 1]];  
+  // }
+&nbsp;
+  //是否使用缺省值
+  useDefault(type, obj, item) {
+    type === 'boolean' ? obj[item] = true : null;
+    type === 'number' ? <span class="branch-0 cbranch-no" title="branch not covered" >obj[item] = 0 </span>: null;
+    type === 'string' ? obj[item] = '' : null;
+    type === 'list' ? <span class="branch-0 cbranch-no" title="branch not covered" >obj[item] = [] </span>: null;
+    return;
+  }
+&nbsp;
+  //标记对应的值的形式：默认值、单个值及list
+  isUseDefaultOrList(idxAry, idx) {
+    //如果当前标记为最后一个标记，指的是记录标记索引数组的最后一项
+    if (idx == idxAry.length - 1) return 0;
+    //差值大于2表示该标记的值为list，等于2表示为单个值，等于1表示使用缺省值
+    return idxAry[idx + 1] - idxAry[idx];
+  }
+&nbsp;
+  toArray(str) {
+    let reg = /-[a-z]{1}/g;
+&nbsp;
+    //和scheme参数结构对比
+    // let str2 = str.replace(reg2,'');
+    let schAry = str.match(reg).join(' ').replace(/-/g, '').split(' ');
+&nbsp;
+    this.isSchema(this.schema, schAry);
+&nbsp;
+    //获取到cl字符串的数组
+    let clAry = str.split(' '),
+      idxAry = [];
+&nbsp;
+    clAry = clAry.map(item =&gt; {
+      return /^-?\d+$/g.test(item) ? Number(item) : item;
+    })
+    // let clAry = str.replace(/-/g,'').split(' ');
+&nbsp;
+    clAry.forEach((item, index) =&gt; {
+      // String(item).includes('-') ? idxAry.push(index) : null;
+      // String(item).split('')[0] == '-' &amp;&amp; /^-[a-zA-Z_]/g.test(item) ? idxAry.push(index) : null;
+      /^-[a-zA-Z_]/g.test(item) ? idxAry.push(index) : null;
+    });
+&nbsp;
+    return {
+      //命令行数组
+      clAry,
+      //标记数组
+      schAry,
+      //标记在命令行中的索引组成的数组
+      idxAry
+    }
+&nbsp;
+  }
+&nbsp;
+  //判断当前标记下一项（即当前标记的值）的数据类型
+  isType(next,obj,item,index,arys){
+    if (/\d+,\d+/.test(next)) {
+      obj[item] = next.split(',').map(item =&gt; {
+        return Number(item);
+      })
+    } else if(/\w+,\w+/i.test(next)){
+      obj[item] = next.split(',')
+    }else{
+      obj[item] = arys.clAry[arys.idxAry[index] + 1];
+    }
+  }
+&nbsp;
+  Parse() {
+    let obj = {};
+    let arys = this.toArray(this.cl),
+      len = arys.clAry.length;
+    console.log(arys)
+    // console.log(this.schema[arys.schAry[0]]);
+    arys.schAry.forEach((item, index) =&gt; {
+      //设置默认值
+      if (this.isUseDefaultOrList(arys.idxAry, index) == 1) {
+        this.useDefault(this.schema[item].type, obj, item);
+      } else if (this.isUseDefaultOrList(arys.idxAry, index) == 2) {
+        // if (this.schema[item].type === 'number') {
+        //   obj[item] = Number(arys.clAry[arys.idxAry[index] + 1]);
+        //   return;
+        // }
+        let nextItem = arys.clAry[arys.idxAry[index] + 1];
+        // if (/\d+,\d+/.test(nextItem)) {
+        //   obj[item] = nextItem.split(',').map(item =&gt; {
+        //     return Number(item);
+        //   })
+        // } else if(/\w+,\w+/i.test(nextItem)){
+        //   obj[item] = nextItem.split(',')
+        // }else{
+        //   obj[item] = arys.clAry[arys.idxAry[index] + 1];
+        // }
+        this.isType(nextItem,obj,item,index,arys);
+      } else if (this.isUseDefaultOrList(arys.idxAry, index) &gt; 2) { //列表类型的参数
+        let _clAry = _.cloneDeep(arys.clAry);
+        obj[item] = _clAry.splice(arys.idxAry[index] + 1, this.isUseDefaultOrList(arys.idxAry, index) - 1);
+      } else { //已确定是最后一个标记，是否为clAry数组的最后一项,是则使用默认值,否则判断索引的位置是否为倒数第二个
+        arys.idxAry[index] == len - 1 ? this.useDefault(this.schema[item].type, obj, item) :
+          (arys.idxAry[index] == len - 2 ? this.isType(arys.clAry[len - 1],obj,item,index,arys) : obj[item] = arys.clAry.slice(arys.idxAry[index] + 1));
+&nbsp;
+          //obj[item] = arys.clAry[len - 1]
+      }
+    })
+    console.log(obj);
+    return obj;
+  }
+}
+&nbsp;
+module.exports = Args;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Apr 08 2020 17:40:02 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
