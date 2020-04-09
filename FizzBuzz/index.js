@@ -1,4 +1,4 @@
-let fizzBuzz = require('../fizzBuzz');
+let fizzBuzz = require('./src/fizzBuzz');
 
 console.log(fizzBuzz(1));
 console.log(fizzBuzz(3));

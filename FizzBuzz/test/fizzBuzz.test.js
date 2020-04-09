@@ -1,4 +1,4 @@
-var fizzBuzz = require('../fizzBuzz');
+var fizzBuzz = require('./src/fizzBuzz');
 var expect = require('chai').expect;
 
 describe("fizzBuzz's test",()=>{
