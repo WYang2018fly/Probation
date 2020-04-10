@@ -1,10 +1,9 @@
-const Args = require('../Args');
-const Schema = require('../Schema');
+const Args = require('./src/Args');
+const Schema = require('./src/Schema');
 const create = Schema.create;
 const schema = Schema.schema;
 const expect = require('chai').expect;
 const should = require('chai').should();
-
 
 describe("Args's test", () => {
   it("valid parameters", () => {
