@@ -1,0 +1,17 @@
+{
+  "name": "MarsRover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "lodash": "^4.17.15",
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.0.0"
+  }
+}
